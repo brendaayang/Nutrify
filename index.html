@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            #container {
+                display: flex;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <img src="images/IMG_0329.JPG">
+            <button id="right">RIGHT</button>
+        </div>
+        <script>
+            let img_array = ["images/IMG_0528.PNG", "images/IMG_0554.PNG", "images/IMG_0329.JPG"];
+            let img = document.querySelector('img');
+            let right = document.getElementById('right');
+            right.addEventListener('click', switchImage);
+
+            function switchImage() {
+                randInt = Math.floor(Math.random()*img_array.length);
+                console.log(randInt);
+                img.src=img_array[randInt];
+            }
+        </script>
+    </body>
+</html>
