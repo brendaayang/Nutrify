@@ -14,11 +14,11 @@
     </head>
     <body>
         <div id="container">
-            <video src="videos/grilled-cheese.mp4">
+            <video src="videos/grilled-cheese.mp4" autoplay muted width="400px" height="auto">
             <button id="right">RIGHT</button>
         </div>
         <script>
-            let img_array = ["images/IMG_0528.PNG", "images/IMG_0554.PNG", "images/IMG_0329.JPG"];
+            let vid_array = ["videos/meatball.mp4", "videos/noodle.mp4"];
             let img = document.querySelector('img');
             let right = document.getElementById('right');
             right.addEventListener('click', switchImage);
